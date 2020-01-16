@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage": "http://andyzack.github.io/my-cars",
+  "homepage": "http://andyzack.github.io/my-cars/build",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
