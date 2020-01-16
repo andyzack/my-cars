@@ -32,7 +32,7 @@ class Cars extends Component {
     return (
       <div className="aaz-cars-container justify-top">
       {/* MAIN SECTION: HERO BANNER */}
-        <div className="az-hero bg-center cover no-repeat center">
+        <div className="az-hero bg-dark-gray bg-center cover no-repeat center">
 
           {/* SUB SECTION: SALE */}
           <section className="az-sale dn pt6 pb4 relative">
@@ -103,7 +103,7 @@ class Cars extends Component {
         </div>
 
         {/* SPECIAL OFFERS */}
-<article className="aq-destinations pb4 bg-light-gray">
+<article className="az-destinations dn pb4 bg-light-gray">
    <div className="dt w-100 mw8 center tc">
       <div className="tc ph2 pv2">
          <p className="f2 fw8 dark-gray pt4 pb3 tc ma0">Explore deals in our top destinations</p>
@@ -154,7 +154,7 @@ class Cars extends Component {
 </article>
         
         {/* TESTIMONIALS */}
-        <div className="az-testimonials bg-center">
+        <div className="az-testimonials bg-center pt4">
           <div className="mw8 center w-100 relative">
             <section className="center">
               <div className="w-100 near-black pointer">

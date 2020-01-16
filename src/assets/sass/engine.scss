@@ -1,22 +1,20 @@
-// SET MAIN THEME (REUSE TACHYONS VARIABLES FROM "catalogue/tachyons/_variables.css")
-$orange: #f54236;			// ENGINE CTA (MAIN PRIMARY BUTTON)
-$blue: #61dafb; 			// NAV LINK/BORDER (SECONDARY COLOR)
-$moon-gray: #ccced1;			// ATLAS GLOBAL GRAY BUTTON
+$orange: #f54236;			
+$blue: #61dafb; 			
+$moon-gray: #ccced1;			
 
-// SET PAGE COLOR
-$red: #e7040f; 						// ATLAS GLOBAL RED #ff5d46 | #b30d16 | #750000
-$light-gray: #efefef;			// SECTION BG
-$gray: #757575;						// USPs ICON
-$moon-gray: #d8d8d8;			// BORDER
-$near-black: #152935;			// USPs COLOR
-$max-width-8: 73.125rem;		// PAGE MAX-WIDTH mw8=1100px (16x75rem)
 
-// SET MICROSITE ALIAS (SEMANTIC IDENTIFIERS)
+$red: #e7040f; 						
+$light-gray: #efefef;			
+$gray: #757575;						
+$moon-gray: #d8d8d8;			
+$near-black: #152935;			
+$max-width-8: 73.125rem;		
+
+
 $aq-primary: $blue;
 $aq-secondary: $orange;
 $aq-complimentary: $moon-gray;
 
-// CUSTOM FONTS
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap);
 
 $open-sans: 'Open Sans', sans-serif;
@@ -25,7 +23,7 @@ $open-sans: 'Open Sans', sans-serif;
 
 $font-size-2: 1.875rem;
 
-// DESKTOP :: CAR|GT ENGINE OVERRIDES (ALL STEPS)
+
 #ct-container {
 	#ct-button-search .ct-btn-p,
 	ct-vehicle-block-buttons .ct-btn.ct-xlarge,
@@ -95,28 +93,28 @@ $font-size-2: 1.875rem;
 .az-sale {
   min-height: 254px;
 }
-.az-engine {
+.az-engine-s1 {
   min-height: 162px;
 }
 
-.ct-step-1 {
-  .az-hero {
-    background-image: url(https://ct-microsites-core.imgix.net/components/hero/car-roadtrip-girls-sunset-car-coast.jpg?h=602&exp=-6&auto=format&fit=crop&w=1840&flip=h&crop=focalpoint&fp-x=.16&fp-z=1.1&fp-y=0.6);
-  }
-  @media #{$breakpoint-not-small} {
-    .az-sale, .az-usp, .az-special-offers, .az-supplier-offers, .az-supplier-logos, .az-testimonials {
-      display: block;
-    }
-  }
+.az-hero {
+	background-image: url(https://ct-microsites-core.imgix.net/components/hero/car-roadtrip-girls-sunset-car-coast.jpg?h=602&exp=-6&auto=format&fit=crop&w=1840&flip=h&crop=focalpoint&fp-x=.16&fp-z=1.1&fp-y=0.6);
 }
 
-// FOR SMOOTHER TRANSITION TO STEP2
+.az-sale, .az-sale, .az-usp, .az-destinations, .az-supplier-offers, .az-supplier-logos, .az-testimonials {
+	display: block !important;
+}
+
+.ct-step-2, .ct-step-3, .ct-step-4, .ct-step-5 {
+	.az-hero {
+		background-image: none;
+	}
+	.az-sale, .az-sale, .az-usp, .az-destinations, .az-supplier-offers, .az-supplier-logos, .az-testimonials {
+		display: none !important;
+	}
+}
+
+
 .ct-interstitial-container{
 	margin-top: 83px !important;
-}
-
-#engine-ghost {
-	svg {
-		height: 266px;
-	}
 }
