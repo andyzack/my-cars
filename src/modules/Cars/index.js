@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Typical from 'react-typical'
+import imageEnginePlaceholder from '../../assets/images/engine-placeholder.svg';
 
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
@@ -32,10 +33,10 @@ class Cars extends Component {
     return (
       <div className="aaz-cars-container justify-top">
       {/* MAIN SECTION: HERO BANNER */}
-        <div className="az-hero bg-dark-gray bg-center cover no-repeat center">
+        <div className="az-hero bg-dark-gray bg-center cover no-repeat center relative">
 
           {/* SUB SECTION: SALE */}
-          <section className="az-sale dn pt6 pb4 relative">
+          <section className="az-sale dn pt6-ns pt2 pb0 ph0-ns ph2">
             <div className="mw8 center w-100">
               <h3 className="az-title lh-title mt0 mb1 f1-ns f3 heading-font white tshadow"> 
                 <Typical
@@ -58,44 +59,50 @@ class Cars extends Component {
           </section>
 
           {/* SUB SECTION: ENGINE */}
-          <section className="az-engine ph2 relative">
+          <section className="az-engine ph2 pt4-ns pt2">
             <div className="mw8 center w-100">
               <div className="az-engine-s1 bg-white-70 near-black pointer relative br2 br--top ph4 pt4">
-                <div ct-app="ct-app" className="absolute pa2 pa0-ns z-5"></div>
+                <div ct-app="ct-app" className="absolute pa2 pa0-ns z-5">
+                  <img
+                    src={imageEnginePlaceholder}
+                    className="w-100"
+                    alt="Engine Loading..."
+                  />
+                </div>
               </div>
             </div>
           </section>
 
           {/* SUB SECTION: SUPPLIER LOGOS */}
-          <section className="az-supplier-logos ph2">
+          <section className="az-supplier-logos ph2 pb4">
             <div className="mw8 center w-100">
               <div className="w-100 dt pv3 ph4 bg-white-60">
                 <span className="dtc tc pa1">
-                  <img height="32" src="https://ct-supplierimage.imgix.net/car/firefly.pdf?auto=format&w=80&bg=FFF&border=1,9b9b9b&pad=4" alt="firefly" />
+                  <img src="https://ct-supplierimage.imgix.net/car/firefly.pdf?auto=format&w=80&bg=FFF&border=1,9b9b9b&pad=4" alt="firefly" />
                 </span>
                 <span className="dtc tc pa1">
-                  <img height="32" src="https://ct-supplierimage.imgix.net/car/avis.pdf?auto=format&w=80" alt="avis" />	
+                  <img src="https://ct-supplierimage.imgix.net/car/avis.pdf?auto=format&w=80" alt="avis" />	
                 </span>
                 <span className="dtc tc pa1">
-                  <img height="32" src="https://ct-supplierimage.imgix.net/car/sixt.pdf?auto=format&w=80" alt="sixt" />
+                  <img src="https://ct-supplierimage.imgix.net/car/sixt.pdf?auto=format&w=80" alt="sixt" />
                 </span>
                 <span className="dtc tc pa1">
-                  <img height="32" src="https://ct-supplierimage.imgix.net/car/enterprise.pdf?auto=format&w=80" alt="enterprise" />
+                  <img src="https://ct-supplierimage.imgix.net/car/enterprise.pdf?auto=format&w=80" alt="enterprise" />
                 </span>
                 <span className="dtc tc pa1">
-                  <img height="32" src="https://ct-supplierimage.imgix.net/car/budget.pdf?auto=format&w=80" alt="budget" />
+                  <img src="https://ct-supplierimage.imgix.net/car/budget.pdf?auto=format&w=80" alt="budget" />
                 </span>
                 <span className="dtc tc pa1">
-                  <img height="32" src="https://ct-supplierimage.imgix.net/car/hertz-alt.pdf?auto=format&w=80" alt="hertz" />
+                  <img src="https://ct-supplierimage.imgix.net/car/hertz-alt.pdf?auto=format&w=80" alt="hertz" />
                 </span>
                 <span className="dtc tc pa1">
-                  <img height="32" src="https://ct-supplierimage.imgix.net/car/alamo.pdf?auto=format&w=80" alt="alamo" />
+                  <img src="https://ct-supplierimage.imgix.net/car/alamo.pdf?auto=format&w=80" alt="alamo" />
                 </span>
                 <span className="dtc tc pa1">
-                  <img height="32" src="https://ct-supplierimage.imgix.net/car/thrifty.pdf?auto=format&w=80&bg=FFF&border=1,8b8b8b&pad=4" alt="thrifty" />
+                  <img src="https://ct-supplierimage.imgix.net/car/thrifty.pdf?auto=format&w=80&bg=FFF&border=1,8b8b8b&pad=4" alt="thrifty" />
                 </span>
                 <span className="dtc tc pa1">
-                  <img height="32" src="https://ct-supplierimage.imgix.net/car/national.pdf?auto=format&w=80" alt="national" />
+                  <img src="https://ct-supplierimage.imgix.net/car/national.pdf?auto=format&w=80" alt="national" />
                 </span>
               </div>
             </div>
@@ -103,58 +110,58 @@ class Cars extends Component {
         </div>
 
         {/* SPECIAL OFFERS */}
-<article className="az-destinations dn pb4 bg-light-gray">
-   <div className="dt w-100 mw8 center tc">
-      <div className="tc ph2 pv2">
-         <p className="f2 fw8 dark-gray pt4 pb3 tc ma0">Explore deals in our top destinations</p>
-      </div>
-      <section className="dt w-100 aq-mw75 center ph3-m">
-         <div className="fl w-50-ns w-100 vh-25 vh-50-ns pa2 overflow-hidden">
-            <a href="/atlasglb/book/?clientId=518129&amp;pickupLocationId=4513&amp;returnLocationId=4513&amp;&amp;currency=try&amp;countryId=GB&amp;carGroup=0&amp;pickupHour=10&amp;pickupMinute=0&amp;returnHour=10&amp;returnMinute=0&amp;residencyId=TR&amp;age=30&amp;pickupMonth=2&amp;pickupYear=2020&amp;pickupDate=2&amp;returnMonth=2&amp;returnYear=2020&amp;returnDate=16&amp;residence=Turkey&amp;residency=Turkey&amp;tp=CT_SPECIAL_OFFER_FEED/" className="link dib w-100 bg-silver">
-               <div className="dib w-100 vh-25 vh-50-ns dt dt--fixed dim cover no-repeat bg-center az-car1">
-                  <div className="v-mid dtc vh-25 vh-50-ns tc w-100">
-                     <h2 className="ma0 pa0 tc w-auto dib mb2 f2 white">Heathrow Airport</h2>
-                     <div className="f4 white"> from <span className="f3 b">₺72</span> / day </div>
-                  </div>
-               </div>
-            </a>
-         </div>
-         <div className="fl w-100 w-50-ns vh-25 pa2 pb3-ns overflow-hidden">
-            <a href="/atlasglb/book/?clientId=518129&amp;pickupLocationId=54028&amp;returnLocationId=54028&amp;&amp;currency=try&amp;countryId=AE&amp;carGroup=0&amp;pickupHour=10&amp;pickupMinute=0&amp;returnHour=10&amp;returnMinute=0&amp;residencyId=TR&amp;age=30&amp;pickupMonth=2&amp;pickupYear=2020&amp;pickupDate=2&amp;returnMonth=2&amp;returnYear=2020&amp;returnDate=16&amp;residence=Turkey&amp;residency=Turkey&amp;tp=CT_SPECIAL_OFFER_FEED/" className="link dib w-100 bg-silver">
-               <div className="dib w-100 vh-25 dt dt--fixed dim cover no-repeat bg-center az-car2">
-                  <div className="v-mid dtc vh-25 tc w-100 ">
-                     <h2 className="ma0 pa0 tc w-auto dib mb2 f2 white">Dubai</h2>
-                     <div className="f4 white"> from <span className="f3 b">₺138</span> / day </div>
-                  </div>
-               </div>
-            </a>
-         </div>
-         <div className="fl w-100 w-25-ns vh-25 pa2 pv3-ns overflow-hidden">
-            <a href="/atlasglb/book/?clientId=518129&amp;pickupLocationId=55664&amp;returnLocationId=55664&amp;&amp;currency=try&amp;countryId=SG&amp;carGroup=0&amp;pickupHour=10&amp;pickupMinute=0&amp;returnHour=10&amp;returnMinute=0&amp;residencyId=TR&amp;age=30&amp;pickupMonth=2&amp;pickupYear=2020&amp;pickupDate=2&amp;returnMonth=2&amp;returnYear=2020&amp;returnDate=16&amp;residence=Turkey&amp;residency=Turkey&amp;tp=CT_SPECIAL_OFFER_FEED/" className="link dib w-100 bg-silver">
-               <div className="dib w-100 vh-25 dt dt--fixed dim cover no-repeat bg-center az-car3">
-                  <div className="v-mid dtc vh-25 tc w-100 ">
-                     <h2 className="ma0 pa0 tc w-auto dib mb2 f2 white">Singapore</h2>
-                     <div className="f4 white"> from <span className="f3 b">₺249</span> / day </div>
-                  </div>
-               </div>
-            </a>
-         </div>
-         <div className="fl w-100 w-25-ns vh-25 pa2 pv3-ns overflow-hidden">
-            <a href="/atlasglb/book/?clientId=518129&amp;pickupLocationId=2640&amp;returnLocationId=2640&amp;&amp;currency=try&amp;countryId=PT&amp;carGroup=0&amp;pickupHour=10&amp;pickupMinute=0&amp;returnHour=10&amp;returnMinute=0&amp;residencyId=TR&amp;age=30&amp;pickupMonth=2&amp;pickupYear=2020&amp;pickupDate=2&amp;returnMonth=2&amp;returnYear=2020&amp;returnDate=16&amp;residence=Turkey&amp;residency=Turkey&amp;tp=CT_SPECIAL_OFFER_FEED/" className="link dib w-100 bg-silver">
-               <div className="dib w-100 vh-25 dt dt--fixed dim cover no-repeat bg-center az-car4">
-                  <div className="v-mid dtc vh-25 tc w-100 ">
-                     <h2 className="ma0 pa0 tc w-auto dib mb2 f2 white">Lisbon</h2>
-                     <div className="f4 white"> from <span className="f3 b">₺52</span> / day </div>
-                  </div>
-               </div>
-            </a>
-         </div>
-      </section>
-   </div>
-</article>
+        <article className="az-destinations dn pb4 bg-light-gray">
+          <div className="dt w-100 mw8 center tc">
+              <div className="tl ph2 pv2">
+                <h3 className="az-title lh-title mt4 mb1 f2-ns f3 heading-font dark-gray tshadow">Explore deals in our top destinations</h3>
+              </div>
+              <section className="dt w-100 aq-mw75 center ph3-m">
+                <div className="fl w-50-ns w-100 vh-25 vh-50-ns pa2 overflow-hidden">
+                    <a href="/atlasglb/book/?clientId=518129&amp;pickupLocationId=4513&amp;returnLocationId=4513&amp;&amp;currency=try&amp;countryId=GB&amp;carGroup=0&amp;pickupHour=10&amp;pickupMinute=0&amp;returnHour=10&amp;returnMinute=0&amp;residencyId=TR&amp;age=30&amp;pickupMonth=2&amp;pickupYear=2020&amp;pickupDate=2&amp;returnMonth=2&amp;returnYear=2020&amp;returnDate=16&amp;residence=Turkey&amp;residency=Turkey&amp;tp=CT_SPECIAL_OFFER_FEED/" className="link dib w-100 bg-silver">
+                      <div className="dib w-100 vh-25 vh-50-ns dt dt--fixed dim cover no-repeat bg-center az-car1">
+                          <div className="v-mid dtc vh-25 vh-50-ns tc w-100">
+                            <h2 className="ma0 pa0 tc w-auto dib mb2 f2 white">Heathrow Airport</h2>
+                            <div className="f4 white"> from <span className="f3 b">₺72</span> / day </div>
+                          </div>
+                      </div>
+                    </a>
+                </div>
+                <div className="fl w-100 w-50-ns vh-25 pa2 pb3-ns overflow-hidden">
+                    <a href="/atlasglb/book/?clientId=518129&amp;pickupLocationId=54028&amp;returnLocationId=54028&amp;&amp;currency=try&amp;countryId=AE&amp;carGroup=0&amp;pickupHour=10&amp;pickupMinute=0&amp;returnHour=10&amp;returnMinute=0&amp;residencyId=TR&amp;age=30&amp;pickupMonth=2&amp;pickupYear=2020&amp;pickupDate=2&amp;returnMonth=2&amp;returnYear=2020&amp;returnDate=16&amp;residence=Turkey&amp;residency=Turkey&amp;tp=CT_SPECIAL_OFFER_FEED/" className="link dib w-100 bg-silver">
+                      <div className="dib w-100 vh-25 dt dt--fixed dim cover no-repeat bg-center az-car2">
+                          <div className="v-mid dtc vh-25 tc w-100 ">
+                            <h2 className="ma0 pa0 tc w-auto dib mb2 f2 white">Dubai</h2>
+                            <div className="f4 white"> from <span className="f3 b">₺138</span> / day </div>
+                          </div>
+                      </div>
+                    </a>
+                </div>
+                <div className="fl w-100 w-25-ns vh-25 pa2 pv3-ns overflow-hidden">
+                    <a href="/atlasglb/book/?clientId=518129&amp;pickupLocationId=55664&amp;returnLocationId=55664&amp;&amp;currency=try&amp;countryId=SG&amp;carGroup=0&amp;pickupHour=10&amp;pickupMinute=0&amp;returnHour=10&amp;returnMinute=0&amp;residencyId=TR&amp;age=30&amp;pickupMonth=2&amp;pickupYear=2020&amp;pickupDate=2&amp;returnMonth=2&amp;returnYear=2020&amp;returnDate=16&amp;residence=Turkey&amp;residency=Turkey&amp;tp=CT_SPECIAL_OFFER_FEED/" className="link dib w-100 bg-silver">
+                      <div className="dib w-100 vh-25 dt dt--fixed dim cover no-repeat bg-center az-car3">
+                          <div className="v-mid dtc vh-25 tc w-100 ">
+                            <h2 className="ma0 pa0 tc w-auto dib mb2 f2 white">Singapore</h2>
+                            <div className="f4 white"> from <span className="f3 b">₺249</span> / day </div>
+                          </div>
+                      </div>
+                    </a>
+                </div>
+                <div className="fl w-100 w-25-ns vh-25 pa2 pv3-ns overflow-hidden">
+                    <a href="/atlasglb/book/?clientId=518129&amp;pickupLocationId=2640&amp;returnLocationId=2640&amp;&amp;currency=try&amp;countryId=PT&amp;carGroup=0&amp;pickupHour=10&amp;pickupMinute=0&amp;returnHour=10&amp;returnMinute=0&amp;residencyId=TR&amp;age=30&amp;pickupMonth=2&amp;pickupYear=2020&amp;pickupDate=2&amp;returnMonth=2&amp;returnYear=2020&amp;returnDate=16&amp;residence=Turkey&amp;residency=Turkey&amp;tp=CT_SPECIAL_OFFER_FEED/" className="link dib w-100 bg-silver">
+                      <div className="dib w-100 vh-25 dt dt--fixed dim cover no-repeat bg-center az-car4">
+                          <div className="v-mid dtc vh-25 tc w-100 ">
+                            <h2 className="ma0 pa0 tc w-auto dib mb2 f2 white">Lisbon</h2>
+                            <div className="f4 white"> from <span className="f3 b">₺52</span> / day </div>
+                          </div>
+                      </div>
+                    </a>
+                </div>
+              </section>
+          </div>
+        </article>
         
         {/* TESTIMONIALS */}
-        <div className="az-testimonials bg-center pt4">
+        <div className="az-testimonials dn bg-center pt4">
           <div className="mw8 center w-100 relative">
             <section className="center">
               <div className="w-100 near-black pointer">
